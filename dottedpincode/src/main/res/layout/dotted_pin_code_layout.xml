@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/login_pin_input_background"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="end"
+            android:id="@+id/pinCodeInputBackgroundImageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pinCodeHiddenEditText"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pinCodeInputBackgroundImageView"
+            app:layout_constraintBottom_toBottomOf="@+id/pinCodeInputBackgroundImageView"
+            app:layout_constraintStart_toStartOf="@+id/pinCodeInputBackgroundImageView"
+            android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:layout_marginEnd="7dp"
+            android:id="@+id/pinDotsHolderLinearLayout">
+
+            <ImageView
+                android:src="@drawable/gray_round_filled"
+                android:layout_width="@dimen/pin_dot_size"
+                android:layout_height="@dimen/pin_dot_size"
+                android:id="@+id/pinDot1ImageView"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/pin_dot_spacing"/>
+
+            <ImageView
+                android:src="@drawable/gray_round_filled"
+                android:layout_width="@dimen/pin_dot_size"
+                android:layout_height="@dimen/pin_dot_size"
+                android:id="@+id/pinDot2ImageView"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/pin_dot_spacing"/>
+
+            <ImageView
+                android:src="@drawable/gray_round_filled"
+                android:layout_width="@dimen/pin_dot_size"
+                android:layout_height="@dimen/pin_dot_size"
+                android:id="@+id/pinDot3ImageView"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/pin_dot_spacing"/>
+
+            <ImageView
+                android:src="@drawable/gray_round_filled"
+                android:layout_width="@dimen/pin_dot_size"
+                android:layout_height="@dimen/pin_dot_size"
+                android:id="@+id/pinDot4ImageView"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/pin_dot_spacing"/>
+
+            <ImageView
+                android:src="@drawable/gray_round_filled"
+                android:layout_width="@dimen/pin_dot_size"
+                android:layout_height="@dimen/pin_dot_size"
+                android:id="@+id/pinDot5ImageView"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/pin_dot_spacing"/>
+
+            <ImageView
+                android:src="@drawable/gray_round_filled"
+                android:layout_width="@dimen/pin_dot_size"
+                android:layout_height="@dimen/pin_dot_size"
+                android:id="@+id/pinDot6ImageView"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/pin_dot_spacing"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:background="@color/transparent"
+            android:textColor="@color/transparent"
+            android:textCursorDrawable="@color/transparent"
+            android:ems="10"
+            android:id="@+id/pinCodeHiddenEditText"
+            android:maxLength="6"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@+id/pinCodeInputBackgroundImageView"
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/pinCodeInputBackgroundImageView"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</merge>
